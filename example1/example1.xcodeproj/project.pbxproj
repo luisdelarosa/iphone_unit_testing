@@ -15,11 +15,11 @@
 		2899E5220DE3E06400AC0155 /* example1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* example1ViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* example1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* example1ViewController.m */; };
-		DE64E0260F4D1C39001FAAB1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = DE64E0250F4D1C39001FAAB1 /* README */; };
-		DE64E0330F4D27C2001FAAB1 /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = DE64E02D0F4D27C2001FAAB1 /* RunIPhoneUnitTest.sh */; };
-		DE64E0340F4D27C2001FAAB1 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = DE64E02E0F4D27C2001FAAB1 /* GTMSenTestCase.m */; };
-		DE64E0350F4D27C2001FAAB1 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = DE64E0300F4D27C2001FAAB1 /* GTMIPhoneUnitTestMain.m */; };
-		DE64E0360F4D27C2001FAAB1 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE64E0310F4D27C2001FAAB1 /* GTMIPhoneUnitTestDelegate.m */; };
+		DE64E0450F4D2890001FAAB1 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE64E0310F4D27C2001FAAB1 /* GTMIPhoneUnitTestDelegate.m */; };
+		DE64E0460F4D2891001FAAB1 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = DE64E0300F4D27C2001FAAB1 /* GTMIPhoneUnitTestMain.m */; };
+		DE64E0470F4D2892001FAAB1 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = DE64E02E0F4D27C2001FAAB1 /* GTMSenTestCase.m */; };
+		DE64E0480F4D2893001FAAB1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = DE64E0250F4D1C39001FAAB1 /* README */; };
+		DE64E0490F4D2894001FAAB1 /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = DE64E02D0F4D27C2001FAAB1 /* RunIPhoneUnitTest.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +174,7 @@
 				DE64E0370F4D281E001FAAB1 /* Resources */,
 				DE64E0380F4D281E001FAAB1 /* Sources */,
 				DE64E0390F4D281E001FAAB1 /* Frameworks */,
+				DE64E0420F4D284B001FAAB1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -209,8 +210,6 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* example1ViewController.xib in Resources */,
-				DE64E0260F4D1C39001FAAB1 /* README in Resources */,
-				DE64E0330F4D27C2001FAAB1 /* RunIPhoneUnitTest.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,10 +217,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE64E0480F4D2893001FAAB1 /* README in Resources */,
+				DE64E0490F4D2894001FAAB1 /* RunIPhoneUnitTest.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DE64E0420F4D284B001FAAB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./UnitTestingFramework/RunIPhoneUnitTest.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -231,9 +248,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* example1AppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* example1ViewController.m in Sources */,
-				DE64E0340F4D27C2001FAAB1 /* GTMSenTestCase.m in Sources */,
-				DE64E0350F4D27C2001FAAB1 /* GTMIPhoneUnitTestMain.m in Sources */,
-				DE64E0360F4D27C2001FAAB1 /* GTMIPhoneUnitTestDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE64E0450F4D2890001FAAB1 /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				DE64E0460F4D2891001FAAB1 /* GTMIPhoneUnitTestMain.m in Sources */,
+				DE64E0470F4D2892001FAAB1 /* GTMSenTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
